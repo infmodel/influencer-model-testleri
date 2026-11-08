@@ -1,0 +1,35 @@
+{
+  "is_range": "2020-01-01..2025-12-31",
+  "tests": {
+    "NQ": {
+      "stats_raw": 192,
+      "stats_excess": 192,
+      "feature_ic": 64
+    },
+    "ES": {
+      "stats_raw": 192,
+      "stats_excess": 192,
+      "feature_ic": 64
+    }
+  },
+  "NQ_eligible_days": 1534,
+  "NQ_events": {
+    "FPFVG_form_A": 1529,
+    "FPFVG_form_B": 1435,
+    "FPFVG_retest_A": 1373,
+    "FPFVG_retest_B": 1220,
+    "IFVG": 1432,
+    "SWEEP": 1432,
+    "TSCISD": 839
+  },
+  "ES_eligible_days": 1534,
+  "ES_events": {
+    "FPFVG_form_A": 1524,
+    "FPFVG_form_B": 1354,
+    "FPFVG_retest_A": 1380,
+    "FPFVG_retest_B": 1163,
+    "IFVG": 1363,
+    "SWEEP": 1376,
+    "TSCISD": 792
+  }
+}

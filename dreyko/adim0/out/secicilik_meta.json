@@ -1,0 +1,72 @@
+{
+ "NQ": {
+  "flag_rates": {
+   "F1": {
+    "FPFVG_form_A": 0.022,
+    "FPFVG_form_B": 0.019,
+    "FPFVG_retest_A": 0.023,
+    "FPFVG_retest_B": 0.02,
+    "IFVG": 0.14,
+    "SWEEP": 0.034,
+    "TSCISD": 0.194
+   },
+   "F2": {
+    "FPFVG_form_A": 0.678,
+    "FPFVG_form_B": 0.677,
+    "FPFVG_retest_A": 0.653,
+    "FPFVG_retest_B": 0.668,
+    "IFVG": 0.749,
+    "SWEEP": 0.749,
+    "TSCISD": 0.743
+   },
+   "F3": {
+    "FPFVG_form_A": 0.597,
+    "FPFVG_form_B": 0.592,
+    "FPFVG_retest_A": 0.603,
+    "FPFVG_retest_B": 0.593,
+    "IFVG": 0.599,
+    "SWEEP": 0.599,
+    "TSCISD": 0.608
+   }
+  },
+  "tests": {
+   "birincil": 7,
+   "ikincil": 145
+  }
+ },
+ "ES": {
+  "flag_rates": {
+   "F1": {
+    "FPFVG_form_A": 0.018,
+    "FPFVG_form_B": 0.016,
+    "FPFVG_retest_A": 0.017,
+    "FPFVG_retest_B": 0.016,
+    "IFVG": 0.117,
+    "SWEEP": 0.026,
+    "TSCISD": 0.167
+   },
+   "F2": {
+    "FPFVG_form_A": 0.692,
+    "FPFVG_form_B": 0.69,
+    "FPFVG_retest_A": 0.678,
+    "FPFVG_retest_B": 0.68,
+    "IFVG": 0.727,
+    "SWEEP": 0.727,
+    "TSCISD": 0.74
+   },
+   "F3": {
+    "FPFVG_form_A": 0.617,
+    "FPFVG_form_B": 0.606,
+    "FPFVG_retest_A": 0.62,
+    "FPFVG_retest_B": 0.604,
+    "IFVG": 0.612,
+    "SWEEP": 0.613,
+    "TSCISD": 0.62
+   }
+  },
+  "tests": {
+   "birincil": 7,
+   "ikincil": 145
+  }
+ }
+}

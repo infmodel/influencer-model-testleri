@@ -1,0 +1,11 @@
+Şu videoyu izle ve analiz et: <LINK>
+
+Videoda anlatılan HER trade fikri / stratejisi için ayrı ayrı şunları çıkar (Türkçe yaz):
+1. Piyasa / enstrüman ve zaman dilimi (bar süresi; grafikte görünen TF etiketini de yaz)
+2. Hangi saat, seans veya olayda işlem açılıyor (saat dilimiyle)
+3. Öne sürülen mekanizma: bu davranış NEDEN olmalı? (Gerekçe yoksa 'gerekçe verilmedi' yaz)
+4. Giriş, stop, hedef ve çıkış kuralları (sayısal eşiklerle; belirsiz kısımları 'belirsiz' diye işaretle). Özellikle: FVG hangi zaman diliminde arandı, giriş FVG'nin neresinden (üst/orta/alt), stop nereye kondu, hedef nasıl seçildi, ekranda çizilen kutu/çizgiler neyi gösteriyor.
+5. İddia edilen sonuçlar (win rate, PF, getiri vb.) ve hangi veri/dönemle, maliyet dahil mi gösterildiği
+6. Ekranda görünen grafik/tablo rakamları (zaman damgasıyla)
+
+En sonda videonun genel tezini 3-4 cümleyle özetle. Videoda olmayan bir şeyi ekleme; emin olmadığın yerleri açıkça belirt.

@@ -1,0 +1,12 @@
+# Ham fiyat verisi lisans gereği paylaşılmaz
+data/
+*.dbn.zst
+
+# Telif: video transkriptleri paylaşılmaz
+transcripts/
+subs/
+
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
