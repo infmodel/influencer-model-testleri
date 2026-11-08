@@ -1,6 +1,6 @@
 # Influencer trade modelleri: gerçek veride test
 
-Sosyal medyada (çoğunlukla YouTube) anlatılan gün içi trade modellerini koda döküp gerçek vadeli işlem verisinde test ediyoruz. Soru tek: **Model, anlatıldığı haliyle uygulandığında avantaj sağlıyor mu?**
+Sosyal medyada (çoğunlukla YouTube) anlatılan gün içi trade modellerini koda döküp gerçek piyasa verisinde (vadeli ve spot) test ediyoruz. Soru tek: **Model, anlatıldığı haliyle uygulandığında avantaj sağlıyor mu?**
 
 - Kurallar influencer'ın kendi videolarından çıkarılır. Her kuralın hangi videonun hangi dakikasından alındığı proje klasöründe listelenir.
 - Kurallar ve başarı şartları sonuçlar görülmeden kayda geçer (ön kayıt).
@@ -11,6 +11,7 @@ Sosyal medyada (çoğunlukla YouTube) anlatılan gün içi trade modellerini kod
 | Proje | Model | Veri | Sonuç | Klasör |
 |---|---|---|---|---|
 | Dreyko | 09:30 manipülasyonu, First Presented FVG, IFVG, Turtle Soup + CISD, NQ/ES SMT | CME NQ ve ES 1 dk, 2020–2025 | **Avantaj bulunamadı.** 32 kural varyantının hiçbiri başarı şartını geçmedi, filtresiz kuralların hepsi maliyet sonrası zararda | [`dreyko/`](dreyko/) |
+| Monarus | Günlük/haftalık bias (flow, CRT), 4S CRT, "fon sistemi" (haftalık bias + PDH/PDL + CHoCH), 15 dk marubozu 1:1, FVG + 30 dk MSB, NQ 15 dk sweep | 6 spot FX (Dukascopy), CME altın ve NQ 1 dk, 2020–2025 | **Avantaj bulunamadı; iddia edilen kazanma oranları üretilemedi.** 260 backtest satırının hiçbiri kârlılık şartını geçmedi; marubozu modeli %47 (iddia ≥%75) | [`monarus/`](monarus/) |
 
 ## Nasıl test ediyoruz?
 
@@ -28,7 +29,7 @@ Transkript taraması, video analizi (Gemini) ve kod yazımı yapay zekâ desteğ
 
 ## Neler paylaşılmıyor?
 
-- **Ham fiyat verisi:** Databento lisansı gereği. Veriyi kendiniz edinip aynı kodu çalıştırabilirsiniz (proje README'lerinde "Yeniden üretme" bölümü).
+- **Ham fiyat verisi:** Databento lisansı gereği. Veriyi kendiniz edinip aynı kodu çalıştırabilirsiniz (proje README'lerinde "Yeniden üretme" bölümü). Spot FX verisi Dukascopy'den ücretsiz indirilebilir; indirme script'leri `monarus/veri/` altında.
 - **Video transkriptleri:** Telif nedeniyle. Kaynak tablolarında video linki, dakika ve kısa alıntı var; transkripti indiren script paylaşılıyor.
 
 ## Kurulum
@@ -37,6 +38,7 @@ Transkript taraması, video analizi (Gemini) ve kod yazımı yapay zekâ desteğ
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 pytest dreyko
+pytest monarus
 ```
 
 Birim testlerinin bir kısmı gerçek veri ister; veri yoksa o testler hata verir. Veri yolu `TRADE_DATA_DIR` ortam değişkeniyle verilir.
